@@ -20,12 +20,12 @@
 ##
 golem::fill_desc(
   pkg_name = "simplegolem", # The name of the golem package containing the app (typically lowercase, no underscore or periods)
-  pkg_title = "PKG_TITLE", # What the Package Does (One Line, Title Case, No Period)
-  pkg_description = "PKG_DESC.", # What the package does (one paragraph).
+  pkg_title = "NCCPA interview dashboard", # What the Package Does (One Line, Title Case, No Period)
+  pkg_description = "I am building a simple dashboard for the NCCPA", # What the package does (one paragraph).
   authors = person(
-    given = "AUTHOR_FIRST", # Your First Name
-    family = "AUTHOR_LAST", # Your Last Name
-    email = "AUTHOR@MAIL.COM", # Your email
+    given = "Geo", # Your First Name
+    family = "Jeong", # Your Last Name
+    email = "statsergeant@gmail.com", # Your email
     role = c("aut", "cre") # Your role (here author/creator)
   ),
   repo_url = NULL, # The URL of the GitHub repo (optional),
@@ -62,13 +62,14 @@ golem::use_utils_server(with_test = TRUE)
 
 ## Use git ----
 usethis::use_git()
-## Sets the remote associated with 'name' to 'url'
-usethis::use_git_remote(
-  name = "origin",
-  url = "https://github.com/<OWNER>/<REPO>.git"
-)
+# ## Sets the remote associated with 'name' to 'url'
+# usethis::use_git_remote(
+#   name = "origin",
+#   url = "https://github.com/<OWNER>/<REPO>.git"
+# )
 
 # You're now set! ----
 
 # go to dev/02_dev.R
 rstudioapi::navigateToFile("dev/02_dev.R")
+

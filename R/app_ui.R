@@ -3,14 +3,18 @@
 #' @param request Internal parameter for `{shiny}`.
 #'     DO NOT REMOVE.
 #' @import shiny
+#' @import bslib
 #' @noRd
 app_ui <- function(request) {
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    fluidPage(
-      golem::golem_welcome_page() # Remove this line to start building your UI
+    page_sidebar(
+      # golem::golem_welcome_page() # Remove this line to start building your UI
+      title = 'My dashboard',
+      sidebar = 'Sidebar',
+      'Main content Area'
     )
   )
 }
